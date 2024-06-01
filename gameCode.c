@@ -149,7 +149,7 @@ int main() {
 			continue;
 		}
 		else if (random == 0 && playerHorse[playerIndex] == horseCount) { //보낼 말 없고 빽도 나왔을 때 차례 건너뜀
-			printf("움직일 말이 없습니다. 차례를 건너뜁니다.\n\n");
+			printf("빽도가 나왔습니다. 움직일 말이 없습니다. 차례를 건너뜁니다.\n\n");
 			index++;
 			continue;
 		}
@@ -208,7 +208,7 @@ int main() {
 				leftPlayerCount++;
 			}
 		}
-		if (leftPlayerCount == playerCount - 1) { //한 명 남았을 때
+		if (leftPlayerCount == 1) { //한 명 남았을 때
 			gameEnd = 1;
 		}
 		index++;
