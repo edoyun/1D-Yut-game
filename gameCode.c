@@ -85,7 +85,7 @@ void moveHorse(int mode, int playerHorse[], int boardPlayer[], int boardHorse[],
 			playerHorse[playerIndex] += boardHorse[playerInput]; //말 회수
 		}
 		else if (targetIndex >= boardSize) { //범위 넘어간 경우(골인)
-			printf("플레이어%d가 말 %d개를 골인 했습니다!\n",playerIndex+1,boardHorse[playerInput]);
+			printf("\x1b[31m플레이어%d 말 %d개를 골인 했습니다!\x1b[0m\n",playerIndex+1,boardHorse[playerInput]); //골인 메시지 출력(색깔 강조)
 		}
 		else {
 			if (boardPlayer[targetIndex] != -1) { //대상 칸에 누가 있을때
